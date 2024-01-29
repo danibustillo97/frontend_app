@@ -1,0 +1,75 @@
+[debug] [2024-01-29T13:52:37.844Z] ----------------------------------------------------------------------
+[debug] [2024-01-29T13:52:37.846Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Mayor\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2024-01-29T13:52:37.847Z] CLI Version:   13.1.0
+[debug] [2024-01-29T13:52:37.847Z] Platform:      win32
+[debug] [2024-01-29T13:52:37.847Z] Node Version:  v20.11.0
+[debug] [2024-01-29T13:52:37.847Z] Time:          Mon Jan 29 2024 08:52:37 GMT-0500 (hora estándar de Colombia)
+[debug] [2024-01-29T13:52:37.847Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-29T13:52:37.854Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-29T13:52:37.854Z] > authorizing via signed-in user (publitendecias@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Mayor\Documents\angular_project\frontend_app
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-01-29T13:55:52.882Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-01-29T13:55:53.511Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-01-29T13:55:53.511Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project publitendencias-2fb87 (publiTendencias) 
+[info] 
+=== Hosting Setup
+[debug] [2024-01-29T13:55:54.949Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/publitendencias-2fb87 [none]
+[debug] [2024-01-29T13:55:55.239Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/publitendencias-2fb87 200
+[debug] [2024-01-29T13:55:55.239Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/publitendencias-2fb87 {"projectId":"publitendencias-2fb87","projectNumber":"460878830111","displayName":"publiTendencias","name":"projects/publitendencias-2fb87","resources":{"hostingSite":"publitendencias-2fb87","realtimeDatabaseInstance":"publitendencias-2fb87-default-rtdb"},"state":"ACTIVE","etag":"1_d03142af-ead3-419b-a114-96bb90de0429"}
+[info] 
+[info] i  Detected a .git folder at C:\Users\Mayor\Documents\angular_project\frontend_app 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=633964008&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-01-29T13:57:15.714Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-01-29T13:57:15.714Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-01-29T13:57:16.129Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-01-29T13:57:16.129Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-01-29T13:57:16.135Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-01-29T13:57:16.621Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-01-29T13:57:16.622Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"danibustillo97","id":147124578,"node_id":"U_kgDOCMTxYg","avatar_url":"https://avatars.githubusercontent.com/u/147124578?v=4","gravatar_id":"","url":"https://api.github.com/users/danibustillo97","html_url":"https://github.com/danibustillo97","followers_url":"https://api.github.com/users/danibustillo97/followers","following_url":"https://api.github.com/users/danibustillo97/following{/other_user}","gists_url":"https://api.github.com/users/danibustillo97/gists{/gist_id}","starred_url":"https://api.github.com/users/danibustillo97/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/danibustillo97/subscriptions","organizations_url":"https://api.github.com/users/danibustillo97/orgs","repos_url":"https://api.github.com/users/danibustillo97/repos","events_url":"https://api.github.com/users/danibustillo97/events{/privacy}","received_events_url":"https://api.github.com/users/danibustillo97/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":7,"public_gists":0,"followers":0,"following":0,"created_at":"2023-10-06T04:12:47Z","updated_at":"2024-01-15T13:16:20Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":28996,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as danibustillo97 
+[info] 
+[debug] [2024-01-29T13:57:45.494Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2024-01-29T13:57:45.744Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2024-01-29T13:57:45.744Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-01-29T13:57:49.643Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2024-01-29T13:57:49.747Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2024-01-29T13:57:49.747Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
